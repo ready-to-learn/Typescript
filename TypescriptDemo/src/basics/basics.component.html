@@ -1,0 +1,41 @@
+<div>
+    <button (click)="staticTyping()">Static Typing</button>
+
+    <h3> <u> Scope of variables </u> </h3>
+    <button (click)="variablesScope()"> Variables scope </button>
+
+    <div *ngIf="letScope"> 
+        <!-- <div>{{letScope}}</div> -->
+        <br>
+  variablesScope() {{ '{' }} <br>
+    this.letScope = true; <br>
+    this.displayScope(); <br>
+  {{ '}' }} <br>
+  <br>
+  displayScope() : string {{ '{' }} <br>
+     let x = " Scope is only within the function "  <br>
+     this.letScope=false; <br>
+    return x;  <br>   
+    {{ '}' }}   <br>
+
+    </div>
+
+    <h3><u> Loop scope </u></h3>
+    <div>
+        <button (click) = "blockScope()">Block Scope</button>
+    </div>
+
+    <h3><u> const variable </u></h3>
+    <ul>
+        <li>const declaration is similar to let declaration except that the value cannot be re-assigned to the variable.</li>
+
+        <li>const declared variables are mutable if declared as an array or as an object literal.</li>
+                
+        <li>const declaration should be used if the value of the variable should not be reinitialized. </li>
+    </ul>
+    
+    <div>
+        <button  (click)="basicsDemo()">basics</button>
+        <app-basics-demo *ngIf="isDemo"></app-basics-demo>
+    </div>
+</div>
