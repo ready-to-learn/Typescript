@@ -5,11 +5,11 @@
      color:#ffffff;
   }
   .navbar-inverse .navbar-nav > .active > a {
-     color: #ffffff;
+     color: #ffffff !important;
      background-color:transparent;
      
  }
  .navbar-inverse .navbar-nav > li > a:hover{
       text-decoration: none;
-     color: #ffffff;
+     color: #ffffff !important;
  }
